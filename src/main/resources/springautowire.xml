@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<bean class= "com.prowing.wirebeans.Person" id= "xyz"  name="person" autowire="constructor" >
+		<property name="id" value="77"/>
+		<property name="name" value="Bhushan Chavan"/>
+		<property name="mobno" value="78945612"/>
+	<!-- 		<property name="address" ref="address"/>
+ --> 
+ </bean>
+
+<bean class="com.prowing.wirebeans.Address" id="wxy" name="address12" >
+	<property name="pin" value="416"/>
+	<property name="city" value="Lonavala"/>
+	<property name="state" value="Maharashtra"/>
+	<property name="country" value="Bharat"/>
+</bean>
+
+<bean class="com.prowing.wirebeans.Address" id="pqr" name="address1">
+	<property name="pin" value="456"/>
+	<property name="city" value="pune"/>
+	<property name="state" value="Maharashtra"/>
+	<property name="country" value="India"/>
+</bean>
+
+</beans>
